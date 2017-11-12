@@ -17,8 +17,7 @@ title: Casey Export
     		    <a href="{{ post.url }}">
                 <span>{{ post.date | date: "%d %B %Y" }}</span>
     		        <h3>{{ post.title }}</h3>
-                <!-- <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div> -->
-                <div>{{post.excerpt}}</div>
+                <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div>
                 <div>
                   {% assign image = post.images[0] %}
                   {% include image.html image=image %}
