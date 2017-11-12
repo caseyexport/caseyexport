@@ -19,9 +19,10 @@ title: Casey Export
     		        <h3>{{ post.title }}</h3>
                 <!-- <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div> -->
                 <div>{{post.excerpt}}</div>
-                <img src="img/mazda6.jpeg" />
-                {% assign image = post.images[0] %}
-                {% include image.html image=image %}
+                <div>
+                  {% assign image = post.images[0] %}
+                  {% include image.html image=image %}
+                </div>
     		    </a>
     		  </li>
     		{% endfor %}
